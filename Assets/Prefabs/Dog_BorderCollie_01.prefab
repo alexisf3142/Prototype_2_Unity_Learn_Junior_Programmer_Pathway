@@ -1903,12 +1903,12 @@ GameObject:
   - component: {fileID: 788997362238612452}
   - component: {fileID: 788997362229228844}
   - component: {fileID: 1291583714738110534}
-  - component: {fileID: 8663034544269433752}
   - component: {fileID: 8869296579608250171}
-  - component: {fileID: 7408105158372529171}
+  - component: {fileID: 6114011300140090295}
+  - component: {fileID: 853277837928380517}
   m_Layer: 0
   m_Name: Dog_BorderCollie_01
-  m_TagString: Untagged
+  m_TagString: Animal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1996,18 +1996,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
---- !u!114 &8663034544269433752
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 788997362238683284}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb92e37e182d92e4d82cc5da8b7fd660, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &8869296579608250171
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2021,7 +2009,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.07208943, y: 0.22057895, z: 0.2705546}
   m_Center: {x: -0.0005178054, y: 0.08818843, z: 0.029383633}
---- !u!114 &7408105158372529171
+--- !u!114 &6114011300140090295
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2030,7 +2018,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 788997362238683284}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 004501ccfc4d96a4c8be36a50a7a29d3, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c52ee72091692143869a36cdefe1fd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &853277837928380517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 788997362238683284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81e62e9a8a22fac478a927ce940e28f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &788997362238684028

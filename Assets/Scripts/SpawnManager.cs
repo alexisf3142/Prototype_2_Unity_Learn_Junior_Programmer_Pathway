@@ -5,6 +5,7 @@ using UnityEngine;
 public class SpawnManager : MonoBehaviour
 {
     public GameObject[] animalPrefabs;
+    public static SpawnManager Instance;
 
     private float spawnRangeX = 20;
     private float spawnPosZ = 20;
@@ -13,6 +14,7 @@ public class SpawnManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Instance = this;
         InvokeRepeating("SpawnRandomAnimal", startDelay,spawnInterval);
     }
     // Update is called once per frame
@@ -29,5 +31,10 @@ public class SpawnManager : MonoBehaviour
         int animalIndex = Random.Range(0, animalPrefabs.Length);
         Instantiate(animalPrefabs[animalIndex], spawnPos,
             animalPrefabs[animalIndex].transform.rotation);
+    }
+
+    public void StopSpawning()
+    {
+        CancelInvoke("SpawnRandomAnimal");
     }
 }
